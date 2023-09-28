@@ -5,87 +5,141 @@
     <meta name="author" content="Aslan">
     <meta name="application-name" content="RoofShop">
     <meta name="description" content="Интернет-магазин спортивных товаров">
-<!--    <link rel="stylesheet" type="text/css" href="outlines.css">-->
+    <link rel="stylesheet" href="css/style.css">
     <title>RoofShop</title>
     <link rel="icon" href="./resources/icon.jpg">
 </head>
 <body>
 <header>
-    <script src="./js/outline-control.js"></script>
-    <h1>
-        <img src="./resources/icon.jpg" alt="icon"/>
-        <br>
-        <b>Интернет-магазин спортивных товаров RoofShop</b>
-    </h1>
-    <div>
-        <div><a href="login.html">Авторизация</a></div>
-        <div><a href="cart.html">Корзина</a></div>
+    <!--    <script src="./js/outline-control.js"></script>-->
+    <div class="main-page-head">
+        <div class="main-page-head__shop-icon">
+            <a href="index.html">
+                <img src="./resources/icon.svg" alt="icon"/>
+            </a>
+        </div>
+        <div class="main-page-head__shop-name">
+            <b>Интернет-магазин спортивных товаров RoofShop</b>
+        </div>
+        <div class="main-side-panel">
+            <div class="login-icon">
+                <a href="login.html" class="login-icon__link">
+                    Авторизация
+                </a>
+            </div>
+            <div class="cart-icon">
+                <a href="cart.html" class="cart-icon__link">
+                    Корзина
+                </a>
+            </div>
+        </div>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Для мужчин</a></li>
-            <li><a href="#">Для женщин</a></li>
-            <li><a href="#">Детям</a></li>
-            <li><a href="#">Виды спорта</a></li>
+
+    <nav class="head-navigation-panel">
+        <ul class="head-navigation-panel-list">
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Каталог
+                </a>
+            </li>
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Для мужчин
+                </a>
+            </li>
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Для женщин
+                </a>
+            </li>
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Детям
+                </a>
+            </li>
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Виды спорта
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section>
-        <h2>В магазине сейчас есть акции:</h2>
+
+    <section class="sale-panel">
+        <h2 class="section-title">В магазине сейчас есть акции:</h2>
         <ol>
-            <li>Получи 5 в школе и батончик в подарок</li>
-            <li>Жмешь сотку? Получил скидку на спортивное питание</li>
-            <li>Купи 50-кг гирю и получи уважение</li>
+            <li class="sale-panel__item">Получи 5 в школе и батончик в подарок</li>
+            <li class="sale-panel__item">Жмешь сотку? Получил скидку на спортивное питание</li>
+            <li class="sale-panel__item">Купи 50-кг гирю и получи уважение</li>
         </ol>
     </section>
 
-    <section>
-        <h2>Люди сейчас покупают:</h2>
-        <div class="product_list">
-
-            <div class="product">
-                <div class="product_img">
-                    <img src="./resources/prod1.jpg" height="400">
+    <section class="actual-products-section">
+        <h2 class="section-title">Люди сейчас покупают:</h2>
+        <div class="product-card-list">
+            <div class="product-card">
+                <div class="product-card__image">
+                    <img src="./resources/prod1.jpg" alt="Скамья для жима">
                 </div>
-                <div class="product_description">
-                    Скамья для жима, 15000 руб.
-                </div>
+<!--                <div class="product-card__description">-->
+                    <h2 class="product-card__title">Скамья для жима</h2>
+                    <p class="product-card__text">Должна быть в доме каждого мужчины</p>
+                    <p class="product-card__price">$129</p>
+                    <button class="product-card__button">Добавить в корзину</button>
+<!--                </div>-->
             </div>
 
-            <div class="product">
-                <div class="product_img">
-                    <img src="./resources/prod2.jpg" height="400">
+
+            <div class="product-card">
+                <div class="product-card__image">
+                    <img src="./resources/prod2.jpg" alt="Тестостерон">
                 </div>
-                <div class="product_description">
-                    Тестостерон, нет в наличии.
+<!--                <div class="product-card__description">-->
+                    <h2 class="product-card__title">Чудо укол</h2>
+                    <p class="product-card__text">Должен быть в теле каждого мужчины</p>
+                    <p class="product-card__price">$777</p>
+                    <button class="product-card__button">Добавить в корзину</button>
+<!--                </div>-->
+            </div>
+
+            <div class="product-card">
+                <div class="product-card__image">
+                    <img src="./resources/prod3.jpg" alt="Скамья для жима">
                 </div>
+                <!--                <div class="product-card__description">-->
+                <h2 class="product-card__title">Мужчинский блин</h2>
+                <p class="product-card__text">Должна быть на грифе каждого мужчины</p>
+                <p class="product-card__price">$1332</p>
+                <button class="product-card__button">Добавить в корзину</button>
+                <!--                </div>-->
             </div>
 
         </div>
 
     </section>
 
-    <article>
-        <h2>Наши партнеры:</h2>
+    <article class="partners">
+        <h2 class="section-title">Наши партнеры:</h2>
         <ul>
-            <li>Nike</li>
-            <li>Adidas</li>
-            <li>Under Armour</li>
+            <li class="partners__item">Nike</li>
+            <li class="partners__item">Adidas</li>
+            <li class="partners__item">Under Armour</li>
         </ul>
     </article>
 
-    <aside>
+    <aside class="motivation-section">
         Каждому спортсмену необходима мотивация. Так держите:
-        <p>Великий <cite><a href="https://en.wikipedia.org/wiki/Ronnie_Coleman">Ронни</a></cite> говорил —
+        <p class="quote">Великий <cite id="ronnie"><a
+                href="https://en.wikipedia.org/wiki/Ronnie_Coleman">Ронни</a></cite> говорил —
             <q>If you can pick it up ITS LIGHT WEIGHT</q></p>
-        <p>
+        <p class="success_formula">
             Формула успеха проста: <br>
             <span>Успех = <b>работа</b><sup>2</sup> +  <sup>талант</sup>&frasl;<sub>2</sub></span>
         </p>
-        <iframe width="560" height="315"
+        <iframe class="motivation-video"
                 src="https://www.youtube.com/embed/wnHW6o8WMas">
         </iframe>
     </aside>
@@ -119,11 +173,25 @@
 
     <h4>Мы находимся по адресу:</h4>
     <iframe
+            class="yandex-map"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A0ec3b4d45618356b1282bcda02e957da5b692674933a7369304b58aca193ebb9&amp;source=constructor"
             width="378" height="322" frameborder="0">
     </iframe>
-
-    <h4>Контакты:</h4>
+    <div class="contacts">
+        <h4>Контакты:</h4>
+        <ul>
+            <li class="contacts__item">
+                <a href="https://t.me/buuushh">
+                    <img src="./resources/telegram.svg" alt="telegram">
+                </a>
+            </li>
+            <li class="contacts__item">
+                <a href="https://github.com/aslantemirkanov">
+                    <img src="./resources/github.svg" alt="github">
+                </a>
+            </li>
+        </ul>
+    </div>
 
 </footer>
 </body>

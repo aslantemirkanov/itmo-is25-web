@@ -1,0 +1,458 @@
+body {
+    font-family: Univers, Helvetica Neue, Helvetica, Myriad Pro, Myriad, Geneva, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F0F0F0;
+    color: #E7473C;
+}
+
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #E7473C;
+    color: #F0F0F0;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.main-page-head {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-navigation-panel-list {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.head-navigation-panel__element {
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    color: #F0F0F0;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.head-navigation-panel__element:hover {
+    background-color: #F0F0F0;
+
+    .head-navigation-panel__link {
+        color: #E7473C
+    }
+;
+}
+
+.head-navigation-panel__link {
+    text-decoration: none;
+    color: #F0F0F0;
+}
+
+.head-navigation-panel > ul {
+    list-style-type: none;
+}
+
+main {
+    /*margin-top: 300px;*/
+}
+
+.main-page-head__shop-icon > a > img {
+    margin: 30px;
+    width: 100px;
+}
+
+.main-page-head__shop-name {
+    font-size: 40px;
+    float-wrap: wrap;
+}
+
+
+.login-icon {
+    display: flex; /* Делаем контейнер flex-контейнером */
+    align-items: center; /* Выравниваем по центру по вертикали */
+    justify-content: center;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    margin: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login-icon:hover {
+    background-color: #F0F0F0;
+
+    .login-icon__link {
+        color: #E7473C
+    }
+;
+}
+
+
+.login-icon__link {
+    text-decoration: none;
+    color: #F0F0F0;
+}
+
+.cart-icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    margin: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.cart-icon__link {
+    text-decoration: none;
+    color: #F0F0F0;
+}
+
+.cart-icon:hover {
+    background-color: #F0F0F0;
+
+    .cart-icon__link {
+        color: #E7473C
+    }
+;
+}
+
+.sale-panel {
+    font-size: 16px;
+}
+
+
+.sale-panel__item {
+}
+
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.actual-products-section {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.product-card-list {
+    flex-direction: row;
+    display: flex;
+}
+
+.product-card {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F0F0;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.product-card__image > img {
+    width: 500px;
+}
+.product-card__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card__title {
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card__text {
+    font-size: 14px;
+    color: #777;
+}
+
+.product-card__price {
+    font-size: 16px;
+    color: #ff6600;
+}
+
+.product-card__button {
+    background-color: #E7473C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-block-start: auto;
+}
+
+.product-card__button:hover {
+    background-color: #4995EB;
+}
+
+
+.sale-panel {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #303030;
+}
+
+.sale-panel ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.sale-panel__item {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #606060;
+}
+
+
+/* Стили для секции с партнерами */
+.partners {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.partners ul {
+    list-style: none;
+    padding: 0;
+}
+
+.partners__item {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.partners__item:hover {
+    color: #ff6600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.motivation-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.quote {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Стили для ссылки в цитате */
+.quote a {
+    text-decoration: none;
+    color: #ff6600;
+}
+
+/* Стили для кавычек в цитате */
+q {
+    font-size: 16px;
+    color: #ff6600;
+}
+
+.success_formula {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.success_formula b {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.success_formula sup {
+    font-size: 12px;
+}
+
+/* Стили для нижних индексов в формуле */
+.success_formula sub {
+    font-size: 12px;
+}
+
+.motivation-video {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: none;
+}
+
+footer {
+    background-color: #E7473C;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+
+footer code {
+    line-height: 1.5;
+    color: #fff;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+
+footer pre {
+    white-space: pre-wrap;
+    font-size: 14px;
+}
+
+/* Стили для вставленного кода внутри <ins> */
+footer ins {
+    line-height: 1;
+}
+
+/* Стили для заголовка "Мы находимся по адресу:" */
+footer h4 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Стили для карты */
+.yandex-map {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    border: none;
+}
+
+.contacts {
+    margin-top: 10px;
+}
+
+.contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts__item {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contacts__item a {
+    text-decoration: none;
+    color: #F0F0F0;
+}
+
+.contacts__item img{
+    width: 30px;
+}
+
+
+.login {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для заголовка "Вход" */
+.sign-in {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+    color: #333;
+}
+
+/* Стили для каждого "Логин" и "Пароль" */
+.login__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-space {
+    margin-top: 5px;
+}
+
+.login-space input[type="text"]{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login__button {
+    margin: 20px;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login__button:hover{
+    background: #ff6600;
+    cursor: pointer;
+}
+
+.go-to-registration-button{
+    margin-bottom: 10px;
+}
+
+.go-to-registration-button a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+/* Стили для ссылки на регистрацию при наведении */
+.go-to-registration-button a:hover {
+    text-decoration: underline;
+}
+
+
+

@@ -5,34 +5,82 @@
     <meta name="author" content="Aslan">
     <meta name="application-name" content="RoofShop">
     <meta name="description" content="Интернет-магазин спортивных товаров">
-    <link rel="stylesheet" type="text/css" href="outlines.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>RoofShop</title>
-    <link rel="icon" href="/resources/icon.jpg">
-    <!--    <link rel="stylesheet" href="./css/outline-prototype-label.css">-->
-    <!--    <script src="/js/outline-control.js"></script>-->
+    <link rel="icon" href="./resources/icon.jpg">
 </head>
 <body>
-    <header>
-        <img src="./resources/icon.jpg" alt="icon"/>
-        <br>
-        <b>Интернет-магазин спортивных товаров RoofShop</b>
-    </header>
+<header>
+    <!--    <script src="./js/outline-control.js"></script>-->
+    <div class="main-page-head">
+        <div class="main-page-head__shop-icon">
+            <a href="index.html">
+                <img src="./resources/icon.svg" alt="icon"/>
+            </a>
+        </div>
+        <div class="main-page-head__shop-name">
+            <b>Интернет-магазин спортивных товаров RoofShop</b>
+        </div>
+        <div class="main-side-panel">
+            <div class="login-icon">
+                <a href="login.html" class="login-icon__link">
+                    Авторизация
+                </a>
+            </div>
+            <div class="cart-icon">
+                <a href="cart.html" class="cart-icon__link">
+                    Корзина
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="head-navigation-panel">
+        <ul class="head-navigation-panel-list">
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Каталог
+                </a>
+            </li>
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Для мужчин
+                </a>
+            </li>
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Для женщин
+                </a>
+            </li>
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Детям
+                </a>
+            </li>
+            <li class="head-navigation-panel__element">
+                <a href="#" class="head-navigation-panel__link">
+                    Виды спорта
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
     <main>
-        <div>
-            <div>Регистрация</div>
-            <div>Придумайте логин</div>
-            <div>
+        <div class="login">
+            <div class="sign-in">Регистрация</div>
+            <div class="login__title">Придумайте логин</div>
+            <div class="login-space">
                 <input type="text" id="username" name="username">
             </div>
-            <div>Придумайте пароль</div>
-            <div>
+            <div class="login__title">Придумайте пароль</div>
+            <div class="login-space">
                 <input type="text" id="password" name="password">
             </div>
-            <div>Повторите пароль</div>
-            <div>
+            <div class="login__title">Повторите пароль</div>
+            <div class="login-space">
                 <input type="text" id="passwordRepeated">
             </div>
-            <div>Зарегистрироваться</div>
+            <button class="login__button">Зарегистрироваться</button>
         </div>
     </main>
     <footer>
