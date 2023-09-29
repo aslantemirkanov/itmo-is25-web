@@ -75,8 +75,8 @@ main {
 
 
 .login-icon {
-    display: flex; /* Делаем контейнер flex-контейнером */
-    align-items: center; /* Выравниваем по центру по вертикали */
+    display: flex;
+    align-items: center;
     justify-content: center;
     padding: 20px;
     border: 3px solid #ccc;
@@ -234,7 +234,6 @@ main {
 }
 
 
-/* Стили для секции с партнерами */
 .partners {
     background-color: #f9f9f9;
     padding: 20px;
@@ -289,7 +288,6 @@ main {
     color: #ff6600;
 }
 
-/* Стили для кавычек в цитате */
 q {
     font-size: 16px;
     color: #ff6600;
@@ -309,7 +307,6 @@ q {
     font-size: 12px;
 }
 
-/* Стили для нижних индексов в формуле */
 .success_formula sub {
     font-size: 12px;
 }
@@ -338,22 +335,19 @@ footer code {
 }
 
 footer pre {
-    white-space: pre-wrap;
+    white-space: pre;
     font-size: 14px;
 }
 
-/* Стили для вставленного кода внутри <ins> */
 footer ins {
     line-height: 1;
 }
 
-/* Стили для заголовка "Мы находимся по адресу:" */
 footer h4 {
     font-size: 20px;
     margin-top: 20px;
 }
 
-/* Стили для карты */
 .yandex-map {
     width: 100%;
     max-width: 500px;
@@ -397,7 +391,6 @@ footer h4 {
     flex-direction: column;
 }
 
-/* Стили для заголовка "Вход" */
 .sign-in {
     font-size: 24px;
     font-weight: bold;
@@ -405,7 +398,6 @@ footer h4 {
     color: #333;
 }
 
-/* Стили для каждого "Логин" и "Пароль" */
 .login__title{
     font-size: 18px;
     font-weight: bold;
@@ -449,7 +441,6 @@ footer h4 {
     font-weight: bold;
 }
 
-/* Стили для ссылки на регистрацию при наведении */
 .go-to-registration-button a:hover {
     text-decoration: underline;
 }
