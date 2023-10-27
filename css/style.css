@@ -8,9 +8,9 @@ body {
 
 
 header {
+    /*position: absolute;*/
     top: 0;
     left: 0;
-    width: 100%;
     background: #E7473C;
     color: #F0F0F0;
     box-shadow: 0 5px rgba(0, 0, 0, 0.1);
@@ -18,10 +18,10 @@ header {
 
 }
 
+
 .main-page-head {
-    flex-direction: row;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .head-navigation-panel-list {
@@ -59,6 +59,95 @@ header {
     list-style-type: none;
 }
 
+
+/*!* Стили для основного заголовка *!
+.main-page-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px 20px;
+}
+
+.main-page-head__shop-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.main-page-head__shop-name {
+    flex: 1;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.main-side-panel {
+    display: flex;
+    gap: 10px;
+}
+
+.login-icon, .cart-icon {
+    margin-left: 10px;
+}
+
+.login-icon__link, .cart-icon__link {
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.login-icon__link:hover, .cart-icon__link:hover {
+    color: #bdc3c7;
+}
+
+!* Стили для навигационной панели *!
+.head-navigation-panel {
+    background-color: #34495e;
+}
+
+.head-navigation-panel-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.head-navigation-panel__element {
+    padding: 10px;
+}
+
+.head-navigation-panel__link {
+    color: #ecf0f1;
+    transition: color 0.3s;
+}
+
+.head-navigation-panel__link:hover {
+    color: #bdc3c7;
+}*/
+
+@media (max-width: 768px) {
+    .main-page-head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-page-head__shop-name, .main-side-panel {
+        margin-top: 10px;
+    }
+
+    .head-navigation-panel-list {
+        flex-wrap: wrap;
+    }
+
+    .head-navigation-panel__element {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+}
+
+
+
 main {
     /*margin-top: 300px;*/
 }
@@ -71,6 +160,12 @@ main {
 .main-page-head__shop-name {
     font-size: 40px;
     float-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .main-page-head__shop-name {
+        display: none;
+    }
 }
 
 
@@ -357,6 +452,12 @@ footer h4 {
     border: none;
 }
 
+@media (max-width: 700px) {
+    .yandex-map {
+        display: none;
+    }
+}
+
 .contacts {
     margin-top: 10px;
 }
@@ -448,4 +549,46 @@ footer h4 {
 }
 
 
+/*таблица*/
+.sports-table {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.sports-table-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.sports-table__header {
+    background-color: #ccc;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sports-table__cell {
+    padding: 10px;
+}
+
+.sports-table-row:nth-child(odd) {
+    background-color: #eaeaea;
+}
+
+.sports-table__cell--available {
+    color: green;
+}
+
+.sports-table__cell--unavailable {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .sports-table-row {
+        grid-template-columns: 1fr;
+    }
+}
 
