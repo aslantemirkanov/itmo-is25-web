@@ -8,7 +8,7 @@ body {
 
 
 header {
-    /*position: absolute;*/
+    position: sticky;
     top: 0;
     left: 0;
     background: #E7473C;
@@ -43,113 +43,15 @@ header {
 
 .head-navigation-panel__element:hover {
     background-color: #F0F0F0;
+}
 
-    .head-navigation-panel__link {
-        color: #E7473C
-    }
-;
+.head-navigation-panel__element:hover .head-navigation-panel__link {
+    color: #E7473C;
 }
 
 .head-navigation-panel__link {
     text-decoration: none;
     color: #F0F0F0;
-}
-
-.head-navigation-panel > ul {
-    list-style-type: none;
-}
-
-
-/*!* Стили для основного заголовка *!
-.main-page-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 10px 20px;
-}
-
-.main-page-head__shop-icon img {
-    width: 40px;
-    height: 40px;
-}
-
-.main-page-head__shop-name {
-    flex: 1;
-    margin-left: 10px;
-    text-align: center;
-}
-
-.main-side-panel {
-    display: flex;
-    gap: 10px;
-}
-
-.login-icon, .cart-icon {
-    margin-left: 10px;
-}
-
-.login-icon__link, .cart-icon__link {
-    color: #ecf0f1;
-    transition: color 0.3s;
-}
-
-.login-icon__link:hover, .cart-icon__link:hover {
-    color: #bdc3c7;
-}
-
-!* Стили для навигационной панели *!
-.head-navigation-panel {
-    background-color: #34495e;
-}
-
-.head-navigation-panel-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-.head-navigation-panel__element {
-    padding: 10px;
-}
-
-.head-navigation-panel__link {
-    color: #ecf0f1;
-    transition: color 0.3s;
-}
-
-.head-navigation-panel__link:hover {
-    color: #bdc3c7;
-}*/
-
-@media (max-width: 768px) {
-    .main-page-head {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .main-page-head__shop-name, .main-side-panel {
-        margin-top: 10px;
-    }
-
-    .head-navigation-panel-list {
-        flex-wrap: wrap;
-    }
-
-    .head-navigation-panel__element {
-        flex: 1 1 50%;
-        text-align: center;
-    }
-}
-
-
-
-main {
-    /*margin-top: 300px;*/
 }
 
 .main-page-head__shop-icon > a > img {
@@ -161,13 +63,6 @@ main {
     font-size: 40px;
     float-wrap: wrap;
 }
-
-@media (max-width: 768px) {
-    .main-page-head__shop-name {
-        display: none;
-    }
-}
-
 
 .login-icon {
     display: flex;
@@ -224,6 +119,43 @@ main {
 ;
 }
 
+@media (max-width: 768px) {
+
+    header{
+        position: static;
+    }
+
+    .main-page-head__shop-name {
+        display: none;
+    }
+
+    .main-side-panel {
+        order: 2;
+    }
+
+    .head-navigation-panel-list {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-page-head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-page-head__shop-name, .main-side-panel {
+        margin-top: 10px;
+    }
+
+    .head-navigation-panel__element {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+}
+
+
+
 .sale-panel {
     font-size: 16px;
 }
@@ -248,12 +180,14 @@ main {
 .product-card-list {
     flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product-card {
     margin: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: #F0F0F0;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -299,6 +233,18 @@ main {
 
 .product-card__button:hover {
     background-color: #4995EB;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+    }
+}
+
+
+@media (max-width: 550px) {
+    .product-card {
+        flex-basis: 100%;
+    }
 }
 
 
@@ -378,7 +324,6 @@ main {
     margin: 10px 0;
 }
 
-/* Стили для ссылки в цитате */
 .quote a {
     text-decoration: none;
     color: #ff6600;
@@ -454,6 +399,9 @@ footer h4 {
 
 @media (max-width: 700px) {
     .yandex-map {
+        display: none;
+    }
+    pre{
         display: none;
     }
 }
@@ -549,7 +497,6 @@ footer h4 {
 }
 
 
-/*таблица*/
 .sports-table {
     text-align: center;
     display: grid;
