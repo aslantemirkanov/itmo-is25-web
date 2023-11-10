@@ -18,6 +18,10 @@ header {
 
 }
 
+.p1 {
+    visibility: visible;
+}
+
 
 .main-page-head {
     display: flex;

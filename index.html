@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-    <!--    <script src="./js/outline-control.js"></script>-->
+    <script src="./js/LoadingTime.js"></script>
     <div class="main-page-head">
         <div class="main-page-head__shop-icon">
             <a href="index.html">
@@ -85,12 +85,12 @@
                 <div class="product-card__image">
                     <img src="./resources/prod1.jpg" alt="Скамья для жима">
                 </div>
-<!--                <div class="product-card__description">-->
-                    <h2 class="product-card__title">Скамья для жима</h2>
-                    <p class="product-card__text">Должна быть в доме каждого мужчины</p>
-                    <p class="product-card__price">$129</p>
-                    <button class="product-card__button">Добавить в корзину</button>
-<!--                </div>-->
+                <!--                <div class="product-card__description">-->
+                <h2 class="product-card__title">Скамья для жима</h2>
+                <p class="product-card__text">Должна быть в доме каждого мужчины</p>
+                <p class="product-card__price">$129</p>
+                <button class="product-card__button">Добавить в корзину</button>
+                <!--                </div>-->
             </div>
 
 
@@ -98,12 +98,12 @@
                 <div class="product-card__image">
                     <img src="./resources/prod2.jpg" alt="Тестостерон">
                 </div>
-<!--                <div class="product-card__description">-->
-                    <h2 class="product-card__title">Чудо укол</h2>
-                    <p class="product-card__text">Должен быть в теле каждого мужчины</p>
-                    <p class="product-card__price">$777</p>
-                    <button class="product-card__button">Добавить в корзину</button>
-<!--                </div>-->
+                <!--                <div class="product-card__description">-->
+                <h2 class="product-card__title">Чудо укол</h2>
+                <p class="product-card__text">Должен быть в теле каждого мужчины</p>
+                <p class="product-card__price">$777</p>
+                <button class="product-card__button">Добавить в корзину</button>
+                <!--                </div>-->
             </div>
 
             <div class="product-card">
@@ -147,6 +147,24 @@
 </main>
 
 <footer>
+
+    <p id="loading-time"></p>
+
+    <script>(function loadingTime(){
+        window.addEventListener(
+            'load', function () {
+                var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+                var loadTimeSeconds = loadTime / 1000;
+                var infoFooter = document.getElementById('loading-time');
+                if (infoFooter) {
+                    infoFooter.textContent = 'Page load time is ' + loadTimeSeconds + ' seconds';
+                } else {
+                    console.log('Element with ID "info-footer" not found.');
+                }
+                return loadTimeSeconds;
+            });
+    })();
+    </script>
 
       <pre>Жизнь <ins><i>программиста</i></ins> начинается с:<code>
     public class HelloWorld {
