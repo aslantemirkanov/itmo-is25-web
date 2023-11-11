@@ -58,6 +58,7 @@ header {
     color: #F0F0F0;
 }
 
+
 .main-page-head__shop-icon > a > img {
     margin: 30px;
     width: 100px;
@@ -125,7 +126,7 @@ header {
 
 @media (max-width: 768px) {
 
-    header{
+    header {
         position: static;
     }
 
@@ -158,6 +159,11 @@ header {
     }
 }
 
+.head-navigation-panel__element.active_page {
+    .head-navigation-panel__link {
+        color: #111;
+    }
+}
 
 
 .sale-panel {
@@ -405,7 +411,8 @@ footer h4 {
     .yandex-map {
         display: none;
     }
-    pre{
+
+    pre {
         display: none;
     }
 }
@@ -542,4 +549,5 @@ footer h4 {
         grid-template-columns: 1fr;
     }
 }
+
 
