@@ -584,9 +584,10 @@ footer h4 {
     }
 }
 
-.wish-list-form{
+.wish-list-form {
     margin: 20px;
-    #max-items{
+
+    #max-items {
         width: 200px;
     }
 }
