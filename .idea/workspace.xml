@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c7a9b4-75ec-48ff-921c-6cddf158e10b" name="Changes" comment="lab-2 modified 2">
-      <change afterPath="$PROJECT_DIR$/js/loading-time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child-catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/female-catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/male-catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports-catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/LoadingTime.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/registration.html" afterDir="false" />
     </list>
@@ -101,7 +105,7 @@
       <workItem from="1697232317662" duration="3945000" />
       <workItem from="1698440277899" duration="14823000" />
       <workItem from="1698500661697" duration="1148000" />
-      <workItem from="1699648032561" duration="9536000" />
+      <workItem from="1699648032561" duration="9843000" />
     </task>
     <task id="LOCAL-00001" summary="lab-2 modified">
       <option name="closed" value="true" />
