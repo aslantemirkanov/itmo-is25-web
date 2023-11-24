@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>RoofShop</title>
-    <script src="js/loading-time.js"></script>
     <link rel="icon" href="./resources/icon.svg">
+    <script src="js/loading-time.js"></script>
     <script src="js/main.js"></script>
+
 </head>
 <body>
 <header>
@@ -75,10 +76,35 @@
 </header>
 <main>
 
+
+    <section class="wish-list-panel">
+        <h2 class="section-title">Список желаемых покупок</h2>
+
+        <form class="wish-list-form" id="max-items-form">
+            <p>Максимальное число покупок</p>
+            <input type="number" id="max-items" placeholder="Максимальное число покупок" required>
+            <button type="submit">Установить</button>
+        </form>
+
+        <form class="wish-list-form" id="wish-form" style="display: none;">
+            <!--display:none когда не ввели макс. число, меняется в скрипте-->
+            <input type="text" id="wish-item" placeholder="Название покупки" required>
+            <!--required - для обязательности поля-->
+            <button type="submit">Добавить покупку</button>
+        </form>
+
+        <ul id="wish-list" style="list-style-type:none;">
+            <li class="wish-list-panel__item"></li>
+        </ul>
+    </section>
+
+    <script src="js/wish-list.js"></script>
+
 </main>
 <footer>
     <p id="loading-time"></p>
-      <pre>Жизнь <ins><i>программиста</i></ins> начинается с:<code>
+
+    <pre>Жизнь <ins><i>программиста</i></ins> начинается с:<code>
     public class HelloWorld {
         public static void main(String[] args) {
         System.out.println("Hello, World!");
