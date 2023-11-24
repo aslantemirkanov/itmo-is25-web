@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76c7a9b4-75ec-48ff-921c-6cddf158e10b" name="Changes" comment="lab-2 modified 2">
+      <change afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child-catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/female-catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/male-catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sports-catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
@@ -21,6 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,16 +59,20 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2VRZygagWBsEVVbTXjLbl6CYT9B" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lab-3",
+    "git-widget-placeholder": "lab-4",
     "last_opened_file_path": "C:/Users/Aslan/WebstormProjects/web/itmo-is25-web",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -91,7 +103,9 @@
       <workItem from="1696059431090" duration="632000" />
       <workItem from="1696107152656" duration="21000" />
       <workItem from="1697232317662" duration="3945000" />
-      <workItem from="1698440277899" duration="13401000" />
+      <workItem from="1698440277899" duration="14823000" />
+      <workItem from="1698500661697" duration="1148000" />
+      <workItem from="1699648032561" duration="9843000" />
     </task>
     <task id="LOCAL-00001" summary="lab-2 modified">
       <option name="closed" value="true" />
