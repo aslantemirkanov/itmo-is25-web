@@ -9,7 +9,7 @@
       <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/child-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/child-catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/feedback.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/female-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/female-catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
@@ -27,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -72,7 +72,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "lab-6",
+    "git-widget-placeholder": "lab-7",
     "last_opened_file_path": "C:/Users/Aslan/WebstormProjects/web/itmo-is25-web",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -113,7 +113,7 @@
       <workItem from="1699648032561" duration="9843000" />
       <workItem from="1700820982138" duration="2294000" />
       <workItem from="1701559215902" duration="5000" />
-      <workItem from="1702048653221" duration="12075000" />
+      <workItem from="1702048653221" duration="16362000" />
     </task>
     <task id="LOCAL-00001" summary="lab-2 modified">
       <option name="closed" value="true" />

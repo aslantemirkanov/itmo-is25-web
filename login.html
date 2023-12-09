@@ -10,6 +10,7 @@
     <title>RoofShop</title>
     <script src="js/loading-time.js"></script>
     <link rel="icon" href="./resources/icon.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
 </head>
 <body>
 <header>
@@ -76,21 +77,32 @@
             </li>
         </ul>
     </nav>
+    <script src="js/mousetrap.js"></script>
 </header>
 <main>
-    <div class="login">
-        <div class="sign-in">Вход</div>
-        <div class="login__title">Логин</div>
-        <div class="login-space">
-            <input type="text" id="username" name="username" placeholder="Введите ваш логин" required>
-        </div>
-        <div class="login__title">Пароль</div>
-        <div class="login-space">
-            <input type="text" id="password" name="password" placeholder="Введите ваше имя" required>
-        </div>
-        <button class="login__button">Выполнить вход</button>
-        <div class="go-to-registration-button"><a href="registration.html">Регистрация</a></div>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+
+        <form class="login">
+            <div class="sign-in">Вход</div>
+            <div class="login__title">Электронная почта</div>
+            <div class="login-space">
+                <input type="email" id="username" name="username" placeholder="Введите почту"
+                       required data-parsley-trigger="change"
+                       data-parsley-type="email">
+            </div>
+            <div class="login__title">Пароль</div>
+            <div class="login-space">
+                <input type="password" id="password" name="password" placeholder="Введите пароль" required data-parsley-trigger="change" data-parsley-minlength="6">
+            </div>
+            <button type="submit" class="login__button">Выполнить вход</button>
+            <div class="go-to-registration-button"><a href="registration.html">Регистрация</a></div>
+        </form>
+
+    <script>
+        $('.login').parsley();
+
+        window.ParsleyValidator.setLocale('ru');
+    </script>
 </main>
 <footer>
     <p id="loading-time"></p>
