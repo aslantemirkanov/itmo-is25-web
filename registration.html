@@ -81,22 +81,41 @@
 </header>
 
 <main>
-    <div class="login">
-        <div class="sign-in">Регистрация</div>
-        <div class="login__title">Придумайте логин</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+
+    <form class="login">
+        <div class="login__title">Электронная почта</div>
         <div class="login-space">
-            <input type="text" id="username" name="username">
+            <input type="email" id="username" name="username" placeholder="Введите ваш email"
+                   required data-parsley-required-message="Введите email"
+                   data-parsley-type="email"
+                   data-parsley-type-message="Некорректный адрес электронной почты"
+                   autocomplete="email">
         </div>
-        <div class="login__title">Придумайте пароль</div>
+        <div class="login__title">Пароль</div>
         <div class="login-space">
-            <input type="text" id="password" name="password">
+            <input type="password" id="password" name="password" placeholder="Введите ваш пароль"
+                   required data-parsley-required-message="Введите пароль"
+                   data-parsley-minlength="6"
+                   data-parsley-minlength-message="Пароль должен быть больше 6 символов"
+                   autocomplete="current-password">
         </div>
         <div class="login__title">Повторите пароль</div>
         <div class="login-space">
-            <input type="text" id="passwordRepeated">
+            <input type="password" id="passwordRepeated" name="passwordRepeated" placeholder="Повторите ваш пароль"
+                   required data-parsley-required-message="Повторите пароль"
+                   data-parsley-equalto="#password"
+                   data-parsley-equalto-message="Пароли должны совпадать">
         </div>
         <button class="login__button">Зарегистрироваться</button>
-    </div>
+    </form>
+
+    <script>
+        $('.login').parsley();
+    </script>
+
 </main>
 <footer>
     <p id="loading-time"></p>

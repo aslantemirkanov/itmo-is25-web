@@ -6,6 +6,11 @@ body {
     color: #E7473C;
 }
 
+.parsley-errors-list {
+    color: blue;
+}
+
+
 
 header {
     top: 0;

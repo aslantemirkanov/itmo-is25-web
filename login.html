@@ -80,29 +80,40 @@
     <script src="js/mousetrap.js"></script>
 </header>
 <main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+    <!-- Parsley.js - это библиотека для валидации форм. Она предоставляет множество встроенных правил
+    валидации и поддерживает кастомизацию -->
 
-        <form class="login">
-            <div class="sign-in">Вход</div>
+
+    <form class="login">
             <div class="login__title">Электронная почта</div>
             <div class="login-space">
-                <input type="email" id="username" name="username" placeholder="Введите почту"
-                       required data-parsley-trigger="change"
-                       data-parsley-type="email">
+                <input type="email" id="username" name="username" placeholder="Введите ваш email"
+                       required data-parsley-required-message="Введите email"
+                       data-parsley-type="email"
+                       data-parsley-type-message="Некорректный адрес электронной почты"
+                       autocomplete="email">
             </div>
             <div class="login__title">Пароль</div>
             <div class="login-space">
-                <input type="password" id="password" name="password" placeholder="Введите пароль" required data-parsley-trigger="change" data-parsley-minlength="6">
+                <input type="password" id="password" name="password" placeholder="Введите ваш пароль"
+                       required data-parsley-required-message="Введите пароль"
+                       data-parsley-minlength="6"
+                       data-parsley-minlength-message="Пароль должен быть больше 6 символов"
+                       autocomplete="current-password">
             </div>
-            <button type="submit" class="login__button">Выполнить вход</button>
+            <button class="login__button">Выполнить вход</button>
             <div class="go-to-registration-button"><a href="registration.html">Регистрация</a></div>
-        </form>
+    </form>
 
     <script>
+        // Инициализация Parsley.js для формы входа
         $('.login').parsley();
-
-        window.ParsleyValidator.setLocale('ru');
+        // $('.login') - использует jQuery для выбора элементов формы с классом 'login'
+        // .parsley() - метод для активации Parsley на выбранной форме.
     </script>
+
 </main>
 <footer>
     <p id="loading-time"></p>
