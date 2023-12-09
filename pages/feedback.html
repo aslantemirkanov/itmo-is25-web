@@ -6,19 +6,20 @@
     <meta name="application-name" content="RoofShop">
     <meta name="description" content="Интернет-магазин спортивных товаров">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>RoofShop</title>
-    <link rel="icon" href="./resources/icon.svg">
-    <script src="js/loading-time.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/loading-time.js"></script>
+    <link rel="icon" href="../resources/icon.svg">
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
 </head>
 <body>
 <header>
     <!--    <script src="./js/outline-control.js"></script>-->
     <div class="main-page-head">
         <div class="main-page-head__shop-icon">
-            <a href="index.html">
-                <img src="./resources/icon.svg" alt="icon"/>
+            <a href="../index.html">
+                <img src="../resources/icon.svg" alt="icon"/>
             </a>
         </div>
         <div class="main-page-head__shop-name">
@@ -70,11 +71,32 @@
                     Сохраненные товары
                 </a>
             </li>
+            <li class="head-navigation-panel__element">
+                <a href="feedback.html" class="head-navigation-panel__link">
+                    Отзывы
+                </a>
+            </li>
         </ul>
     </nav>
+    <script src="../js/mousetrap.js"></script>
 </header>
 <main>
 
+    <section>
+    </section>
+
+    <section class="feedback-section">
+        <h1 class="main__heading">Отзывы</h1>
+        <div class="preloader">
+            <img src="../resources/preloader.gif" alt="preloader">
+        </div>
+        <div class="feedback-list">
+
+
+        </div>
+    </section>
+
+    <script src="../js/comment.js"></script>
 </main>
 <footer>
     <p id="loading-time"></p>
@@ -103,12 +125,12 @@
         <ul>
             <li class="contacts__item">
                 <a href="https://t.me/buuushh">
-                    <img src="./resources/telegram.svg" alt="telegram">
+                    <img src="../resources/telegram.svg" alt="telegram">
                 </a>
             </li>
             <li class="contacts__item">
                 <a href="https://github.com/aslantemirkanov">
-                    <img src="./resources/github.svg" alt="github">
+                    <img src="../resources/github.svg" alt="github">
                 </a>
             </li>
         </ul>

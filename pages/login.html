@@ -6,19 +6,19 @@
     <meta name="application-name" content="RoofShop">
     <meta name="description" content="Интернет-магазин спортивных товаров">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>RoofShop</title>
-    <link rel="icon" href="./resources/icon.svg">
-    <script src="js/loading-time.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/loading-time.js"></script>
+    <link rel="icon" href="../resources/icon.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
 </head>
 <body>
 <header>
     <!--    <script src="./js/outline-control.js"></script>-->
     <div class="main-page-head">
         <div class="main-page-head__shop-icon">
-            <a href="index.html">
-                <img src="./resources/icon.svg" alt="icon"/>
+            <a href="../index.html">
+                <img src="../resources/icon.svg" alt="icon"/>
             </a>
         </div>
         <div class="main-page-head__shop-name">
@@ -70,10 +70,49 @@
                     Сохраненные товары
                 </a>
             </li>
+            <li class="head-navigation-panel__element">
+                <a href="feedback.html" class="head-navigation-panel__link">
+                    Отзывы
+                </a>
+            </li>
         </ul>
     </nav>
+    <script src="../js/mousetrap.js"></script>
 </header>
 <main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+    <!-- Parsley.js - это библиотека для валидации форм. Она предоставляет множество встроенных правил
+    валидации и поддерживает кастомизацию -->
+
+
+    <form class="login">
+            <div class="login__title">Электронная почта</div>
+            <div class="login-space">
+                <input type="email" id="username" name="username" placeholder="Введите ваш email"
+                       required data-parsley-required-message="Введите email"
+                       data-parsley-type="email"
+                       data-parsley-type-message="Некорректный адрес электронной почты"
+                       autocomplete="email">
+            </div>
+            <div class="login__title">Пароль</div>
+            <div class="login-space">
+                <input type="password" id="password" name="password" placeholder="Введите ваш пароль"
+                       required data-parsley-required-message="Введите пароль"
+                       data-parsley-minlength="6"
+                       data-parsley-minlength-message="Пароль должен быть больше 6 символов"
+                       autocomplete="current-password">
+            </div>
+            <button class="login__button">Выполнить вход</button>
+            <div class="go-to-registration-button"><a href="registration.html">Регистрация</a></div>
+    </form>
+
+    <script>
+        // Инициализация Parsley.js для формы входа
+        $('.login').parsley();
+        // $('.login') - использует jQuery для выбора элементов формы с классом 'login'
+        // .parsley() - метод для активации Parsley на выбранной форме.
+    </script>
 
 </main>
 <footer>
@@ -103,12 +142,12 @@
         <ul>
             <li class="contacts__item">
                 <a href="https://t.me/buuushh">
-                    <img src="./resources/telegram.svg" alt="telegram">
+                    <img src="../resources/telegram.svg" alt="telegram">
                 </a>
             </li>
             <li class="contacts__item">
                 <a href="https://github.com/aslantemirkanov">
-                    <img src="./resources/github.svg" alt="github">
+                    <img src="../resources/github.svg" alt="github">
                 </a>
             </li>
         </ul>

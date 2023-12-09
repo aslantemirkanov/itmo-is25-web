@@ -6,6 +6,11 @@ body {
     color: #E7473C;
 }
 
+.parsley-errors-list {
+    color: blue;
+}
+
+
 
 header {
     top: 0;
@@ -193,7 +198,19 @@ header {
     text-align: center;
 }
 
+.feedback-section {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
 .product-card-list {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feedback-list {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -212,6 +229,21 @@ header {
     border: 1px solid #ccc;
 }
 
+.feedback-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F0F0F0;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
 .product-card__image > img {
     width: 500px;
 }
@@ -226,12 +258,32 @@ header {
     color: #333;
 }
 
+.feedback-item__name {
+    font-size: 18px;
+    color: #333;
+}
+
+.feedback {
+    font-size: 18px;
+    color: #333;
+}
+
 .product-card__text {
     font-size: 14px;
     color: #777;
 }
 
+.feedback-item__text{
+    font-size: 14px;
+    color: #777;
+}
+
 .product-card__price {
+    font-size: 16px;
+    color: #ff6600;
+}
+
+.feedback-item__mail {
     font-size: 16px;
     color: #ff6600;
 }
@@ -256,12 +308,24 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    .feedback-item {
+    }
+}
+
 
 @media (max-width: 550px) {
     .product-card {
         flex-basis: 100%;
     }
 }
+
+@media (max-width: 550px) {
+    .feedback-item {
+        flex-basis: 100%;
+    }
+}
+
 
 
 .sale-panel {

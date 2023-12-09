@@ -6,18 +6,20 @@
     <meta name="application-name" content="RoofShop">
     <meta name="description" content="Интернет-магазин спортивных товаров">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>RoofShop</title>
-    <link rel="icon" href="./resources/icon.svg">
-    <script src="js/loading-time.js"></script>
+    <script src="../js/loading-time.js"></script>
+    <link rel="icon" href="../resources/icon.svg">
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
 </head>
 <body>
 <header>
     <!--    <script src="./js/outline-control.js"></script>-->
     <div class="main-page-head">
         <div class="main-page-head__shop-icon">
-            <a href="index.html">
-                <img src="./resources/icon.svg" alt="icon"/>
+            <a href="../index.html">
+                <img src="../resources/icon.svg" alt="icon"/>
             </a>
         </div>
         <div class="main-page-head__shop-name">
@@ -69,40 +71,17 @@
                     Сохраненные товары
                 </a>
             </li>
+            <li class="head-navigation-panel__element">
+                <a href="feedback.html" class="head-navigation-panel__link">
+                    Отзывы
+                </a>
+            </li>
         </ul>
     </nav>
+    <script src="../js/mousetrap.js"></script>
 </header>
 <main>
-    <div class="sports-table">
-        <div class="sports-table-row">
-            <div class="sports-table__header">Товар</div>
-            <div class="sports-table__header">Цена</div>
-            <div class="sports-table__header">Производитель</div>
-            <div class="sports-table__header">Доступность</div>
-        </div>
 
-        <div class="sports-table-row">
-            <div class="sports-table__cell">Футбольный мяч</div>
-            <div class="sports-table__cell">1500 руб.</div>
-            <div class="sports-table__cell">Nike</div>
-            <div class="sports-table__cell sports-table__cell--available">В наличии</div>
-        </div>
-
-        <div class="sports-table-row">
-            <div class="sports-table__cell">Теннисная ракетка</div>
-            <div class="sports-table__cell">3000 руб.</div>
-            <div class="sports-table__cell">Wilson</div>
-            <div class="sports-table__cell sports-table__cell--unavailable">Нет в наличии</div>
-        </div>
-
-        <div class="sports-table-row">
-            <div class="sports-table__cell">Груша боксерская</div>
-            <div class="sports-table__cell">14000 руб.</div>
-            <div class="sports-table__cell">Demix</div>
-            <div class="sports-table__cell sports-table__cell--available">В наличии</div>
-        </div>
-        <!-- Можно добавить больше строк с данными о товарах -->
-    </div>
 </main>
 <footer>
     <p id="loading-time"></p>
@@ -130,12 +109,12 @@
         <ul>
             <li class="contacts__item">
                 <a href="https://t.me/buuushh">
-                    <img src="./resources/telegram.svg" alt="telegram">
+                    <img src="../resources/telegram.svg" alt="telegram">
                 </a>
             </li>
             <li class="contacts__item">
                 <a href="https://github.com/aslantemirkanov">
-                    <img src="./resources/github.svg" alt="github">
+                    <img src="../resources/github.svg" alt="github">
                 </a>
             </li>
         </ul>
