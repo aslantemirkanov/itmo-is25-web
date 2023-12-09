@@ -6,11 +6,10 @@
     <meta name="application-name" content="RoofShop">
     <meta name="description" content="Интернет-магазин спортивных товаров">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>RoofShop</title>
-    <link rel="icon" href="./resources/icon.svg">
-    <script src="js/loading-time.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/loading-time.js"></script>
+    <link rel="icon" href="../resources/icon.svg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
 </head>
 <body>
@@ -18,8 +17,8 @@
     <!--    <script src="./js/outline-control.js"></script>-->
     <div class="main-page-head">
         <div class="main-page-head__shop-icon">
-            <a href="index.html">
-                <img src="./resources/icon.svg" alt="icon"/>
+            <a href="../index.html">
+                <img src="../resources/icon.svg" alt="icon"/>
             </a>
         </div>
         <div class="main-page-head__shop-name">
@@ -78,33 +77,44 @@
             </li>
         </ul>
     </nav>
-    <script src="js/mousetrap.js"></script>
+    <script src="../js/mousetrap.js"></script>
 </header>
+
 <main>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 
-    <section class="wish-list-panel">
-        <h2 class="section-title">Список желаемых покупок</h2>
+    <form class="login">
+        <div class="login__title">Электронная почта</div>
+        <div class="login-space">
+            <input type="email" id="username" name="username" placeholder="Введите ваш email"
+                   required data-parsley-required-message="Введите email"
+                   data-parsley-type="email"
+                   data-parsley-type-message="Некорректный адрес электронной почты"
+                   autocomplete="email">
+        </div>
+        <div class="login__title">Пароль</div>
+        <div class="login-space">
+            <input type="password" id="password" name="password" placeholder="Введите ваш пароль"
+                   required data-parsley-required-message="Введите пароль"
+                   data-parsley-minlength="6"
+                   data-parsley-minlength-message="Пароль должен быть больше 6 символов"
+                   autocomplete="current-password">
+        </div>
+        <div class="login__title">Повторите пароль</div>
+        <div class="login-space">
+            <input type="password" id="passwordRepeated" name="passwordRepeated" placeholder="Повторите ваш пароль"
+                   required data-parsley-required-message="Повторите пароль"
+                   data-parsley-equalto="#password"
+                   data-parsley-equalto-message="Пароли должны совпадать">
+        </div>
+        <button class="login__button">Зарегистрироваться</button>
+    </form>
 
-        <form class="wish-list-form" id="max-items-form">
-            <p>Максимальное число покупок</p>
-            <input type="number" id="max-items" placeholder="Максимальное число покупок" required>
-            <button type="submit">Установить</button>
-        </form>
-
-        <form class="wish-list-form" id="wish-form" style="display: none;">
-            <!--display:none когда не ввели макс. число, меняется в скрипте-->
-            <input type="text" id="wish-item" placeholder="Название покупки" required>
-            <!--required - для обязательности поля-->
-            <button type="submit">Добавить покупку</button>
-        </form>
-
-        <ul id="wish-list" style="list-style-type:none;">
-            <li class="wish-list-panel__item"></li>
-        </ul>
-    </section>
-
-    <script src="js/wish-list.js"></script>
+    <script>
+        $('.login').parsley();
+    </script>
 
 </main>
 <footer>
@@ -134,12 +144,12 @@
         <ul>
             <li class="contacts__item">
                 <a href="https://t.me/buuushh">
-                    <img src="./resources/telegram.svg" alt="telegram">
+                    <img src="../resources/telegram.svg" alt="telegram">
                 </a>
             </li>
             <li class="contacts__item">
                 <a href="https://github.com/aslantemirkanov">
-                    <img src="./resources/github.svg" alt="github">
+                    <img src="../resources/github.svg" alt="github">
                 </a>
             </li>
         </ul>
