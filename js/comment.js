@@ -3,7 +3,8 @@ function loadComments() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            const filteredData = data.filter(comment => comment.id >= 100 && comment.id <= 200);
+            const from = Math.floor(Math.random() * (data.length - 9));
+            const filteredData = data.slice(from, from + 9);
             renderComments(filteredData);
             hidePreloader();
         })
